@@ -1,0 +1,13 @@
+[package]
+name = "static_object"
+version = "0.1.0"
+description = "A lib for quickly add a global static instance to a struct ."
+authors = ["Golden_Water"]
+license = "MIT"
+repository = "https://github.com/BiliGoldenWater/StaticObject.git"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+static_object_derive = { path = "static_object_derive" }
