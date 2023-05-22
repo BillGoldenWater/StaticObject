@@ -11,7 +11,7 @@ pub fn derive_static_object(input: TokenStream) -> TokenStream {
   let (ig, tg, wc) = input.generics.split_for_impl();
 
   let expanded = quote! {
-    impl #ig static_object::StaticObject for #name #tg #wc {
+    impl #ig static_object::StaticObject<#name> for #name #tg #wc {
       fn i() -> &'static mut Self {
         use std::sync::Once;
 
